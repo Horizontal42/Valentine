@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.yesButton {
+  background-color: #4caf50; /* Зеленый цвет фона */
+  border: none; /* Убрать границу кнопки */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убрать подчеркивание */
+  display: inline-block; /* Отобразить как блочный элемент */
+  font-size: 16px; /* Размер шрифта */
+  padding: 10px 20px; /* Отступы вокруг текста */
+  margin: 5px 10px; /* Отступы вокруг кнопки */
+  cursor: pointer; /* Изменить курсор при наведении */
+  border-radius: 5px; /* Скругление углов */
+  font-family:
+    "Segoe UI",
+    Segoe UI; /* Другой шрифт для кнопок */
+  transition: 0.2s ease;
+}
+
+.noButton {
+  background-color: #f44336; /* Красный цвет фона */
+  border: none; /* Убрать границу кнопки */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  text-decoration: none; /* Убрать подчеркивание */
+  display: inline-block; /* Отобразить как блочный элемент */
+  font-size: 16px; /* Размер шрифта */
+  padding: 10px 20px; /* Отступы вокруг текста */
+  margin: 5px 10px; /* Отступы вокруг кнопки */
+  cursor: pointer; /* Изменить курсор при наведении */
+  border-radius: 5px; /* Скругление углов */
+  font-family:
+    "Segoe UI",
+    Segoe UI; /* Другой шрифт для кнопок */
+  position: centre;
+  transition: 0.3s ease;
+}
+
+.noButton:hover {
+  visibility: hidden; /* временно скрываем кнопку */
+}
+
+body {
+  font-family:
+    "Segoe UI",
+    Segoe UI; /* Шрифт для всего текста на странице */
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.valentine-container {
+  position: relative;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
